@@ -1,0 +1,185 @@
+@media only screen and (max-width: 360px) {
+  body {
+    background: url(https://www.teahub.io/photos/full/320-3209433_spider-man-full-hd-wallpaper-for-iphone.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+    /* width: 360px; */
+    margin: 0;
+    justify-content: center;
+    background-color: #0b4281;
+  }
+  .top {
+    text-align: left;
+    height: 50px;
+    padding: 0.1px 0.5px 15px 5px;
+    position: relative;
+    background: linear-gradient(to right, #0066ff 0%, #ff6699 100%);
+  }
+
+  .search {
+    height: 35px;
+    width: 340px;
+    margin-top: 8px;
+    margin-right: 5px;
+    background-color: rgb(22, 5, 77);
+    border-radius: 10px 30px 30px 10px;
+    color: white;
+    padding: 5px;
+  }
+
+  .menu {
+    display: inline-block;
+    align-items: center;
+    margin-top: 0;
+    padding: 0;
+    height: 30px;
+    /* text-align: right; */
+    position: absolute;
+    right: 10px;
+  }
+
+  .menu-bar {
+    height: 30px;
+    width: 270px;
+    border-radius: 25px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: inline-flex;
+    background: linear-gradient(to right, #c31432, #9e1739);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    padding: 0 8px;
+    margin: 0 0 0 0;
+  }
+  .menu-bar li {
+    list-style: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 8px 10px;
+    margin: 0 8px;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .menu-bar li::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: 0.2s;
+    border-radius: 25px;
+  }
+  .menu-bar li:hover {
+    color: rgb(233, 230, 230);
+  }
+  .menu-bar li:hover::before {
+    background: linear-gradient(to bottom, #d65651, #9015c0);
+    box-shadow: 0px 3px 20px 0px black;
+    /* transform: scale(1.2); */
+  }
+  .menu-bar li:active {
+    box-shadow: 8px 2 px #26a0da;
+    transform: translate(0, 2px);
+    background: #6647ee;
+    box-shadow: #314755;
+    transition: 0.15s;
+  }
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 360px;
+  }
+
+  .content-mey {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 450px;
+    padding-left: 5px;
+    background: linear-gradient(
+      149deg,
+      rgba(24, 187, 156, 1) 0%,
+      rgba(106, 57, 175, 1) 42%,
+      rgba(187, 24, 148, 1) 72%,
+      rgba(115, 53, 134, 1) 100%
+    );
+    animation: gradient 5s infinite linear;
+    background-size: 400%;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 80% 0%;
+    }
+    50% {
+      background-position: 20% 100%;
+    }
+    100% {
+      background-position: 80% 0%;
+    }
+  }
+  .name-mey {
+    margin: 0;
+    margin-top: 15px;
+    color: rgb(250, 48, 48);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100px;
+    /* padding-left : 10px; */
+    margin-left: 0px;
+    margin-bottom: 20px;
+    background-color: #f2acf8;
+    width: 90px;
+    border: 1px dashed rgb(22, 5, 77);
+    border-width: 8px;
+    border-radius: 60px;
+    display: inline-block;
+  }
+  .profile-mey {
+    width: 300px;
+    height: 350px;
+  }
+
+  .info-mey {
+    display: inline-block;
+    width: 160px;
+    height: 250px;
+    color: #dbecf3;
+    padding: 0px 8px 5px 4px;
+  }
+
+  .p-mey {
+    display: inline-block;
+    margin: 0;
+    width: 150px;
+    height: px;
+    font-size: 12px;
+    background-color: rgb(22, 5, 77);
+    padding: 5px 8px;
+    text-align: justify;
+  }
+
+  .img-mey {
+    height: 150px;
+    width: 100px;
+  }
+
+  .grant {
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 100px;
+    margin-left: 10px;
+  }
+  .footer {
+    min-height: 10px;
+    width: 25%;
+  }
+}
